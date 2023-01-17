@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav {
+    background: rgba(255, 255, 255, 0.90);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+}
+
+nav a {
+    color: #393E46;
+    text-decoration: none;
+    transition: ease-in 0.1s;
+}
+
+nav a:hover {
+    color: #af0000;
+    transition: ease-in 0.1s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 0px 15px;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+
+.logo {
+    flex: 1;
+}
+
+ul li ul.dropdown {
+    width: 250px;
+    background: white;
+    position: absolute;
+    display: none;
+    transition: ease 0.1s;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    border-bottom: 0.2px solid black;
+    padding-bottom: 1px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.logoo {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    }
+
+    .menu {
+        margin-top: 12px;
+        display: none;
+        margin-left: -40px;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        transition: ease-in 0.1s;
+    }
+
+    .toggle:hover {
+        transition: ease-in 0.1s;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    height: 470px;
+    background-color: white;
+    padding: 5% 5%;
+}
+
+.tulisan {
+    padding-left: 5%;
+    padding: 15px 15px;
+}
+
+.karinda {
+    color: #af0000;
+    font-weight: bold;
+}
+
+.gambar-home {
+    padding-left: 17%;
+}
+
+.about-karinda {
+    font-size: 13px;
+}
+
+.merah-karinda {
+    background-color: #af0000;
+    color: white;
+    font-size: 13px;
+}
+
+.merah-karinda:hover {
+    background-color: #910000;
+    color: white;
+}
+
+/* Info */
+.jarak {
+    margin-top: 150px;
+}
+
+.jarakk {
+    margin-top: 30px;
+}
+
+#info {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.line {
+    background-color: #af0000;
+    width: 200px;
+    height: 6px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.judull {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+
+.infop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.infop > .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infop > .col-md-6 > img {
+    width: 90%;
+    padding-bottom: 10px;
+    overflow: hidden;
+    perspective: 1px;
+}
+
+.tulisaan {
+    font-size: 15px;
+    color: black;
+    width: 95%;
+}
+
+/* Location */
+.map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.peta {
+    width: 85%;
+    height: 400px;
+}
+
+/* Footer */
+footer {
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content > h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.media-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.media-icons li {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+
+.media-icons > li > i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    align-items: center;
+    text-align: center;
+    background: #222222;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 1px;
+}
+
+.footer-bottom p {
+    font-weight: 400;
+}
+
+.footer-bottom > p > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Jarak */
+@media screen and (max-width: 600px) {
+    .gambar-home {
+        padding-top: 25px;
+    }
+}
